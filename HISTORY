@@ -1,0 +1,259 @@
+COMMAND HISTORY: 
+
+
+
+  610  echo "Practice has begun"
+  611  pwd
+  612  git init
+  613  touch a b c
+  614  git add .
+  615  git status
+  616  git commit -m "Initial commit, files a, b and c were created"
+  617  git log
+  618  git branch -m main
+  619  git log
+  620  echo "This is a file called A" >> a
+  621  git status
+  622  git commit -am " a was Modified"
+  623  echo "This is a file called B" >> b
+  624  git commit -am " b was Modified"
+  625  git log
+  626  echo "This is a temporary text message. will be changed in another branch." >> c
+  627  git commit -am "Temporary text was added to c ."
+  628  git log
+  629  git log -a
+  630  git tag 0.0.0 d2c72e0ee98ea
+  631  git tag 0.0.1 304852e31c0
+  632  git log --oneline
+  633  git switch -c Fixes 
+  634  echo "Running over text of c" > c
+  635  cat c
+  636  git status
+  637  git add c
+  638  git commit 0m "C was runned over at this new branch called Fixes"
+  639  git commit -m "C was runned over at this new branch called Fixes"
+  640  git log
+  641  git tag  0.1.1 add3fdb
+  642  git log
+  643  touch d e f
+  644  echo "sometext" >> d
+  645  echo "This is file e " >> e
+  646  add d e
+  647  add e
+  648  git add e 
+  649  git add d
+  650  git commit -m "d and e were created and text was added to them"
+  651  git --help
+  652  git help -a
+  653  git help -a stash
+  654  git status
+  655  rm introduced\ by\ some\ existing\ commits 
+  656  git status
+  657  git stash
+  658  echo " This file will be stashed" > stash
+  659  git add stash
+  660  git stash
+  661  git status
+  662  git log
+  663  git stash show
+  664  touch 1 2 \
+  665  touch 1 2 
+  666  git log
+  667  git status
+  668  git add 2
+  669  git commit -m "file 2 was added to the commit."
+  670  git status
+  671  git log
+  672  git add f
+  673  git status
+  674  echo adsfasdfdf >> f
+  675  git restore --staged f
+  676  git status
+  677  git add 1
+  678  git rm --cached 2
+  679  git status
+  680  git log
+  681  git commit -am "2 was removed from git's track"
+  682  git status
+  683  echo " ccc" >> 2
+  684  git log --oneline
+  685  git add 2
+  686  echo "asdfads" >> f
+  687  git commit -m " f was edited" 
+  688  git log
+  689  git status
+  690  cat f
+  691  git checkout 10419c74079c
+  692  ls
+  693  cat f
+  694  git stash pop
+  695  git add stash
+  696  git commit -m "Stash was restored"
+  697  git log
+  698  git checkout master
+  699  git checkout main
+  700  git log --oneline --graph
+  701  git log --oneline --graph --all
+  702  git status
+  703  git stash pop
+  704  git checkout fixes
+  705  git checkout Fixes
+  706  git log
+  707  git log --all
+  708  git status
+  709  echo "aaa" >> f
+  710  git add f
+  711  git stash f
+  712  git stash 
+  713  git commit -am "f was stashed"
+  714  touch 3
+  715  echo "33333" >> 3
+  716  git commit -am " 3 was added and edited"
+  717  git add 3
+  718  git commit -am " 3 was added and edited"
+  719  git log
+  720  git stash apply
+  721  git commit -am " stash was applied . f was restored"
+  722  git log
+  723  touch 5
+  724  echo "nothing" >> 5
+  725  git stash
+  726  git add 5
+  727  git add f
+  728  git log
+  729  git stash
+  730  git stash show
+  731  git checkout -b Stashpop
+  732  git log
+  733  echo "aaa" >> e
+  734  git add .
+  735  git commit -m "e was edited' New branch called stashpop"
+  736  giit status
+  737  git status
+  738  git log
+  739  git pop
+  740  git stash pop
+  741  git commit -am " Stash was popped"
+  742  git log
+  743  git tag v0.2.1 
+  744  git log
+  745  echo "aasdfdasf" >> 1
+  746  git commit -am " 1 was eddited"
+  747  git log
+  748  cp 1 8
+  749  git add .
+  750  git commit -m "1 was coppied to 8"
+  751  git log
+  752  git reset --soft 0cb75906
+  753  git log
+  754  git reset --soft 21074e2
+  755  git log
+  756  rm 8
+  757  git add .
+  758  git commit -m "8 , coppy of 1 , was removed"
+  759  git log
+  760  git log --all
+  761  touch 22
+  762  git add 22
+  763  git commit -m "8 , coppy of 1 , was removed and 22 file was added"
+  764  git log
+  765  git log --graph
+  766  git log --graph --oneline --all
+  767  git checkout Fixes
+  768  git log
+  769  git merge Stashpop
+  770  git log --graph --oneline --all
+  771  man git
+  772  git log --graph --all
+  773  git rebase main
+  774  git log
+  775  git log --graph --all
+  776  git log --graph --all --oneline
+  777  git log
+  778  git log --all
+  779  git -m main
+  780  git branch -m main
+  781  git checkout main
+  782  git log
+  783  git merge Stashpop
+  784  git log --oneline --all
+  785  git log --oneline --all --graph
+  786  git checkout 974ef
+  787  git log
+  788  git checkout -b merging
+  789  git log
+  790  git checkout main
+  791  git merge merging
+  792  git log
+  793  git log --oneline --graph
+  794  git branch -r merging
+  795  git branch rm merging
+  796  git log
+  797  git log --oneline --graph
+  798  git branch -d merging
+  799  git log --oneline --graph
+  800  git branch -d rm
+  801  git log --oneline --graph
+  802  git checkout fixes
+  803  git checkout Fixes
+  804  add 34 35
+  805  git add .
+  806  echo "asdf" >> 34
+  807  git add 34
+  808  git commit -m "34 was added"
+  809  git log
+  810  git log --oneline --graph --all
+  811  git rebase main
+  812  git log --oneline --graph --all
+  813  git log --oneline
+  814  git checkout main
+  815  touc 234
+  816  touch 234
+  817  git add 234
+  818  git commit -m " 234 was created"
+  819  git checkout Fixes
+  820  git log --oneline --graph
+  821  git merge Stashpop
+  822  git branch -d Stashpop
+  823  git log --oneline --graph
+  824  git checkout main
+  825  git log --oneline --graph
+  826  git rebase Fixes
+  827  git log --oneline --graph --all
+  828  git log
+  829  git checkout main
+  830  git branch -d Fixes
+  831  git log
+  832  git log --oneline --graph --all
+  833  git tag v1.3.2
+  834  git log
+  835  main git tag
+  836  echo "aaaaaaaa" > 43
+  837  git add 43
+  838  git commit -m " 43"
+  839  git log
+  840  git tag -l
+  841  git tag -d v1.3.2
+  842  git tag v1.3.3 f117f
+  843  git tag -d v1.3.2
+  844  git tag -l
+  845  git status
+  846  rm 34 43
+  847  echo "ddd" >> d
+  848  git add .
+  849  git status
+  850  git diff --staged
+  851  git add .]
+  852  git add .
+  853  git commit -m "practice was accomplised. "
+  854  git log
+  855  git log --graph --all --oneline
+  856  echo "Practice is done. i rate it 5/10 omo. History will be uploaded"
+  857  echo "Practice is done. i rate it 5/10 omo. History will be uploaded from remote" >> done
+  858  git add done
+  859  git commit -m " Done"
+  860  git remote add origin git@github.com:AlexBrown200401/1st.git
+  861  git remote -l
+  862  git remote -v
+  863  git push -u origin main
+  864  history
